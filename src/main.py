@@ -2,6 +2,7 @@ from flask import Flask, request, render_template
 import RPi.GPIO as GPIO
 
 GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
 
 red_pin = 26
 blue_pin = 13
