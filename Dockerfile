@@ -17,6 +17,9 @@ COPY ./requirements.txt /requirements.txt
 # pip install python deps from requirements.txt on the resin.io build server
 RUN pip install -r /requirements.txt
 
+# Install needed packages
+RUN apt-get -y install python3-rpi.gpio
+
 # This will copy all files in our root to the working  directory in the container
 COPY . ./
 
