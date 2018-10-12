@@ -24,7 +24,7 @@ red_bright = 100
 blue_bright = 100
 green_bright = 100
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder = 'src/templates')
 
 def hex_to_rgb(h):
     h = h.strip('#')
