@@ -48,10 +48,6 @@ def index():
         return render_template('index.html', current_color=current_color)
     else:
         current_color = '#FFFFFF'
-        red_bright, green_bright, blue_bright = hex_to_rgb(current_color)
-        red_pwm.ChangeDutyCycle(ard_map(red_bright, 0, 255, 0.0, 100.0))
-        green_pwm.ChangeDutyCycle(ard_map(green_bright, 0, 255, 0.0, 100.0))
-        blue_pwm.ChangeDutyCycle(ard_map(blue_bright, 0, 255, 0.0, 100.0))
         return render_template('index.html', current_color=current_color)
 
 if __name__ == '__main__':
