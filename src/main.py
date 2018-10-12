@@ -12,9 +12,9 @@ GPIO.setup(red_pin, GPIO.OUT)
 GPIO.setup(blue_pin, GPIO.OUT)
 GPIO.setup(green_pin, GPIO.OUT)
 
-red_pwm=GPIO.PWM(red_pin,10)
-blue_pwm=GPIO.PWM(blue_pin,10)
-green_pwm=GPIO.PWM(green_pin,10)
+red_pwm=GPIO.PWM(red_pin,10000)
+blue_pwm=GPIO.PWM(blue_pin,10000)
+green_pwm=GPIO.PWM(green_pin,10000)
 
 red_pwm.start(0)
 blue_pwm.start(0)
