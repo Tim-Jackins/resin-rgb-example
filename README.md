@@ -28,4 +28,4 @@ Then in your browser you should be able to open the device URL and see the messa
 
 [resin-link]:https://resin.io/
 [signup-page]:https://dashboard.resin.io/signup
-[gettingStarted-link]:http://docs.resin.io/#/pages/installing/gettingStarted.md
+[gettingStarted-link]:http://docs.resin.io/#/pages/installing/gettingStar

@@ -34,7 +34,6 @@ def rgb_to_hex(rgb):
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    
     if request.method == 'POST':
         current_color = request.form.get('led_color')
         red_bright, green_bright, blue_bright = hex_to_rgb(current_color)
